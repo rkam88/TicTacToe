@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/default_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/x_win_count_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/cross"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textAppearance="@style/DefaultTextAppearance" />
+
+        <TextView
+            android:id="@+id/o_win_count_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/circle"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textAppearance="@style/DefaultTextAppearance" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/end_game_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/end_game_box_border"
+        android:orientation="vertical"
+        android:padding="@dimen/end_game_box_padding"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/winner_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/DefaultTextAppearance"
+            tools:text="Winner" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/restart_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/button_margin"
+                android:text="@string/restart"
+                android:textAppearance="@style/DefaultTextAppearance" />
+
+            <Button
+                android:id="@+id/close_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/button_margin"
+                android:text="@string/close"
+                android:textAppearance="@style/DefaultTextAppearance" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

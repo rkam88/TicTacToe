@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="zero">0</string>
+    <string name="Crosses">Крестики</string>
+    <string name="Circles">Нолики</string>
+    <string name="Draw">Ничья</string>
+    <string name="restart">Еще раз</string>
+    <string name="close">Закрыть</string>
+    <string name="empty" />
+</resources>
